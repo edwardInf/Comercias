@@ -1,0 +1,496 @@
+<resources>
+    <string name="app_name">Comercias.pe</string>
+
+    <string name="noDatos">No hay Datos</string>
+
+    <!-- Menu -->
+    <string name="buscar">Buscar</string>
+    <string name="qr">scan</string>
+    <string name="login">login</string>
+    <string name="iniciarSesion">Iniciar</string>
+
+    <!-- Bottom Menu -->
+    <string name="mensajes">Mensajes</string>
+    <string name="carrito">Carrito</string>
+    <string name="cuenta">Mi Cuenta</string>
+    <string name="deseos">Deseos</string>
+    <string name="inicio">Inicio</string>
+
+
+    <!-- Network -->
+    <string name="dialogo_habilitar_wifi_titulo">Sin Conexion a Internet</string>
+    <string name="dialogo_habilitar_wifi_mensaje">¿Quieres habilitar el Wifi?</string>
+    <string name="dialogo_ok">OK</string>
+    <string name="dialogo_cancelar">Cancelar</string>
+
+    <string name="no_conexion">¡Sin Conexión!</string>
+    <string name="habilitar_red">Habilitar Red</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Iconos Grupos -->
+    <string name="fa_bolt">&#xf0e7;</string>
+    <string name="fa_female">&#xf182;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_male">&#xf183;</string>
+    <string name="fa_diamond">&#xf3a5;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_shopping_bag">&#xf290;</string>
+    <string name="fa_child">&#xf1ae;</string>
+    <string name="fa_soccer_ball_o">&#xf1e3;</string>
+    <string name="fa_automobile">&#xf1b9;</string>
+    <string name="fa_cog">&#xf013;</string>
+    <string name="fa_mouse_pointer">&#xf245;</string>
+    <string name="fa_heart">&#xf004;</string>
+
+
+    <!-- Login Dialog -->
+    <string name="login_txt">Cuenta de Ingreso</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="login_registro">Registrarse</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_face">Iniciar con Facebook</string>
+    <string name="iniciar_google">Iniciar con Google</string>
+    <string name="olvidarContra">¿Olvidaste tu Contraseña?</string>
+
+
+    <!-- Activity Dialog -->
+    <string name="loginAct_txt">Ó Ingresa Con</string>
+    <string name="o_txt"> ó </string>
+    <string name="crear_cuenta">Crea tu Cuenta</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="numero_contacto">Numero de Contacto</string>
+    <string name="crear">Crear Cuenta</string>
+    <string name="estoy_deAcuerdo">Estoy de Acuerdo</string>
+    <string name="error_invalid_password">Esta contraseña es muy corta</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es necesario</string>
+    <string name="error_invalid_email">El correo debe contener @</string>
+
+
+    <!-- Fragment Inicio -->
+    <string name="opcion_categorias">Categorias</string>
+    <string name="opcion_ofertas">Ofertas</string>
+    <string name="opcion_envios">Envios</string>
+    <string name="opcion_sorteos">Sorteos</string>
+    <string name="opcion_juegos">Juegos</string>
+    <string name="tendencias">Tendencias</string>
+    <string name="nuevosPRod">Productos Nuevos</string>
+
+
+    <!-- Facebook Login -->
+    <string name="facebook_app_id">377937079595895</string>
+    <string name="fb_login_protocol_scheme">fb377937079595895</string>
+
+    <!-- Iconos Mi Cuenta -->
+    <string name="fa_shopping_cart">&#xf07a;</string>
+    <string name="fa_rocket">&#xf135;</string>
+    <string name="fa_heart_o">&#xf08a;</string>
+    <string name="fa_tags">&#xf02c;</string>
+
+    <!-- Icono Deseos   &#xf004; -->
+
+    <!--Mi Cuenta -->
+    <string name="miCuenta">Mi Cuenta</string>
+    <string name="ordenes">Órdenes</string>
+    <string name="disputas">Disputas</string>
+    <string name="cupones">Cupones</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="pendientePago">Pendiente de pago</string>
+    <string name="pendienteEnvio">Pendiente de envío</string>
+    <string name="PedidosEnviados">Pedidos enviados</string>
+    <string name="pendienteValoracion">Pendiente de valoración</string>
+    <string name="historialComprar">Historial de compras</string>
+    <string name="pedidoDisputa">Pedidos con disputa</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="perfil">Mi Perfil</string>
+    <string name="sugerencias">Sugerencias</string>
+    <string name="ayuda">Centro de ayuda</string>
+    <string name="title_activity_producto">ProductoActivity</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+    <string name="iniciarSesion2">Iniciar Sesión</string>
+
+
+    <!--Producto Detalle -->
+    <string name="disponibilidad">Disponibilidad: </string>
+    <string name="soles">S/. </string>
+    <string name="envio">Envio: </string>
+    <string name="fecha_estimada">Fecha Estimada: </string>
+    <string name="empresa">Empresa: </string>
+    <string name="mas"> + </string>
+    <string name="menos"> - </string>
+    <string name="descripcion">Descripción</string>
+    <string name="comprar">Comprar</string>
+    <string name="anadir_carrito">Añadir a Carrito</string>
+    <string name="anadir">AÑADIR</string>
+    <string name="especificaciones">Especificaciones del Vendedor</string>
+    <string name="detallesVendedor">Distribuido y Vendido por: </string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!--Carrito -->
+    <string name="no_productos">No hay Productos en el Carrito</string>
+    <string name="title_activity_confirmar_pedido">ConfirmarPedido</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <!--Confirmar Pedido -->
+    <string name="confirmarPedido">Los precios que aparecen en esta página pueden variar de lo que
+    has visto anteriormente. Esto se debe a que el precio final varia en función de la dirección de envío y
+    las especificaciones que aparecen abajo</string>
+    <string name="metodoPago">Seleccionar Método de Pago</string>
+    <string name="pagarAhora">PAGAR AHORA</string>
+    <string name="resumenPedido">Resumen del Pedido</string>
+    <string name="subtotalPagarPedido">Subtotal:</string>
+    <string name="cuponPagarPedido">Cupón:</string>
+    <string name="totalPagarPedido">Total a Pagar</string>
+    <string name="aceptarTerminos">Al hacer click en \"PAGAR AHORA\", confirmo haber leído y aceptado los términos y condiciones</string>
+    <string name="n_tarjeta">Nº de tarjeta</string>
+    <string name="codigoTarjeta">Código de seguridad</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="mm">MM</string>
+    <string name="aa">AA</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="nombApell">Nombres y Apellidos</string>
+    <string name="celular">Celular</string>
+    <string name="direccion">Dirección</string>
+    <string name="direcc2">Referencia</string>
+    <string name="depto">Depto./Int (Opcional)</string>
+    <string name="ubarnizacion">Urbanización (Opcional)</string>
+    <string name="referencia">Referencia (Opcional)</string>
+    <string name="codPostal">Código Postal</string>
+
+    <string name="departamento">Departamento</string>
+    <string name="provincia">Provincia</string>
+    <string name="distrito">Distrito</string>
+    <string name="addDirecc">Agregar Dirección</string>
+    <string name="tipoDirecc">Tipo de Dirección</string>
+    <string name="editarDirecc">Editar Dirección</string>
+
+
+    <string name="err_msg_name">Ingresa tus Datos</string>
+    <string name="err_msg_email">Ingresa un Email valido</string>
+    <string name="err_msg_password">Ingresa la contraseña</string>
+
+    <!--Cupones -->
+    <string name="Miscupones">Mis Cupones</string>
+    <string-array name="cuponesTipo">
+        <item>NUEVOS</item>
+        <item>UTILIZADOS</item>
+        <item>CADUCADO</item>
+        <item>TODOS</item>
+    </string-array>
+
+
+    <!--Mi Perfil -->
+    <string name="MiPerfil">Mi Perfil</string>
+    <string name="dirEnvio">Mis Direcciones de Envío</string>
+    <string name="misTarjetas">Mis Tarjetas</string>
+    <string name="addTarjeta">Agregar Tarjeta</string>
+    <string name="editar">Editar</string>
+
+
+    <!-- Pediddos Enviados -->
+    <string name="pedidosEnviados">Pedidos Enviados</string>
+    <string name="nroPedido">Nº Pedido: \u0020</string>
+    <string name="fechPedido">Fecha Pedido: \u0020</string>
+    <string name="noPedidos">No Tienes Pedidos Enviados</string>
+    <string name="seguimiento">Seguimiento</string>
+    <string name="confirmarPedidoRe">Confirmar Pedido Recibido</string>
+    <string name="montoTotal">Monto Total:</string>
+    <string name="cantidad">Cantidad:</string>
+
+    <!-- Pendiente de Valoracion -->
+    <string name="pendValoracion">Pendientes de Valoración</string>
+    <string name="valorarAhora">Valorar Ahora</string>
+    <string name="valorarPreg1">¿Estás satisfecho con el producto adquirido?</string>
+
+
+    <!-- Pendiente de Pago -->
+    <string name="pendPago">Pendientes de Pago</string>
+
+    <!-- Pendiente de Envio -->
+    <string name="pendEnvio">Pendientes de Envío</string>
+
+
+    <!-- Direccion -->
+    <string name="direccAgregada">Tu dirección ha sido agregada correctamente</string>
+    <string name="direccNoAgregada">Nose ha podido agregar tu dirección</string>
+
+
+    <string-array name="provAmazonas">
+        <item>Chachapoyas</item>
+        <item>Bagua</item>
+        <item>Bongará</item>
+        <item>Condorcanqui</item>
+        <item>Luya</item>
+        <item>Rodríguez de Mendoza</item>
+        <item>Utcubamba</item>
+    </string-array>
+
+    <string-array name="provAncash">
+        <item>Huaraz</item>
+        <item>Aija</item>
+        <item>Antonio Raymondi</item>
+        <item>Asunción</item>
+        <item>Bolognesi</item>
+        <item>Carhuaz</item>
+        <item>Carlos Fermín Fitzcarrald</item>
+        <item>Casma</item>
+        <item>Corongo</item>
+        <item>Huari</item>
+        <item>Huarmey</item>
+        <item>Huaylas</item>
+        <item>Mariscal Luzuriaga</item>
+        <item>Ocros</item>
+        <item>Pallasca</item>
+        <item>Pomabamba</item>
+        <item>Recuay</item>
+        <item>Papá</item>
+        <item>Sihuas</item>
+        <item>Yungay</item>
+    </string-array>
+
+    <string-array name="provApurimac">
+        <item>Abancay</item>
+        <item>Andahuaylas</item>
+        <item>Antabamba</item>
+        <item>Aymaraes</item>
+        <item>Cotabambas</item>
+        <item>Chincheros</item>
+        <item>Grau</item>
+    </string-array>
+
+    <string-array name="provArequipa">
+        <item>Arequipa</item>
+        <item>Camaná</item>
+        <item>Caravelí</item>
+        <item>Castilla</item>
+        <item>Caylloma</item>
+        <item>Condesuyos</item>
+        <item>Islay</item>
+        <item>La Unión</item>
+    </string-array>
+
+    <string-array name="provAyacucho">
+        <item>Huamanga</item>
+        <item>Cangallo</item>
+        <item>Huanca Sancos</item>
+        <item>Huanta</item>
+        <item>La Mar</item>
+        <item>Lucanas</item>
+        <item>Parinacochas</item>
+        <item>Páucar del Sara Sara</item>
+        <item>Sucre</item>
+        <item>Víctor Fajardo</item>
+        <item>Vilcas Huamán</item>
+    </string-array>
+
+    <string-array name="provCajamarca">
+        <item>Cajamarca</item>
+        <item>Cajabamba</item>
+        <item>Celendín</item>
+        <item>Chota</item>
+        <item>Contumazá</item>
+        <item>Cutervo</item>
+        <item>Hualgayoc</item>
+        <item>Jaén</item>
+        <item>San Ignacio</item>
+        <item>San Marcos</item>
+        <item>San Miguel</item>
+        <item>San Pablo</item>
+        <item>Santa Cruz</item>
+    </string-array>
+
+    <string-array name="provCusco">
+        <item>Cusco</item>
+        <item>Acomayo</item>
+        <item>Anta</item>
+        <item>Calca</item>
+        <item>Canas</item>
+        <item>Canchis</item>
+        <item>Chumbivilcas</item>
+        <item>Espinar</item>
+        <item>La Convención</item>
+        <item>Paruro</item>
+        <item>Paucartambo</item>
+        <item>Quispicanchi</item>
+        <item>Urubamba</item>
+    </string-array>
+
+    <string-array name="provHuancavelica">
+        <item>Huancavelica</item>
+        <item>Acobamba</item>
+        <item>Angaraes</item>
+        <item>Castrovirreyna</item>
+        <item>Churcampa</item>
+        <item>Huaytará</item>
+        <item>Tayacaja</item>
+    </string-array>
+
+    <string-array name="provHuanuco">
+        <item>Huánuco</item>
+        <item>Ambón</item>
+        <item>Dos de Mayo</item>
+        <item>Huacaybamba</item>
+        <item>Huamalíes</item>
+        <item>Leoncio Prado</item>
+        <item>Marañón</item>
+        <item>Pachitea</item>
+        <item>Puerto Inca</item>
+        <item>Lauricocha</item>
+        <item>Yarowilca</item>
+
+    </string-array>
+
+    <string-array name="provIca">
+        <item>Ica</item>
+        <item>Chincha</item>
+        <item>Nazca</item>
+        <item>Palpa</item>
+        <item>Pisco</item>
+    </string-array>
+
+    <string-array name="provJunin">
+        <item>Huancayo</item>
+        <item>Concepción</item>
+        <item>Chanchamayo</item>
+        <item>Jauja</item>
+        <item>Junín</item>
+        <item>Satipo</item>
+        <item>Tarma</item>
+        <item>Yauli</item>
+        <item>Chupaca</item>
+    </string-array>
+
+    <string-array name="provLaLibertad">
+        <item>Trujillo</item>
+        <item>Ascope</item>
+        <item>Bolívar</item>
+        <item>Chepén</item>
+        <item>Julcán</item>
+        <item>Otuzco</item>
+        <item>Pacasmayo</item>
+        <item>Pataz</item>
+        <item>Sánchez Carrión</item>
+        <item>Santiago de Chuco</item>
+        <item>Gran Chimú</item>
+        <item>Virú</item>
+
+    </string-array>
+
+    <string-array name="provLambayeque">
+        <item>Chiclayo</item>
+        <item>Ferreñafe</item>
+        <item>Lambayeque</item>
+    </string-array>
+
+    <string-array name="provLima">
+        <item>Barranca</item>
+        <item>Cajatambo</item>
+        <item>Callao</item>
+        <item>Canta</item>
+        <item>Cañete</item>
+        <item>Huaral</item>
+        <item>Huarochirí</item>
+        <item>Oyón</item>
+        <item>Yauyos</item>
+    </string-array>
+
+    <string-array name="provLoreto">
+        <item>Maynas</item>
+        <item>Alto Amazonas</item>
+        <item>Loreto</item>
+        <item>Mariscal Ramón Castilla</item>
+        <item>Requena</item>
+        <item>Ucayali</item>
+        <item>Datem del Marañón</item>
+    </string-array>
+
+    <string-array name="provMadre">
+        <item>Tambopata</item>
+        <item>Manú</item>
+        <item>Tahuamanu</item>
+    </string-array>
+
+    <string-array name="provMoquegua">
+        <item>Mariscal Nieto</item>
+        <item>General Sánchez Cerro	</item>
+        <item>Ilo</item>
+    </string-array>
+
+    <string-array name="provPasco">
+        <item>Pasco</item>
+        <item>Daniel Alcides Carrión</item>
+        <item>Oxapampa</item>
+    </string-array>
+
+    <string-array name="provPiura">
+        <item>Piura</item>
+        <item>Ayabaca</item>
+        <item>Huancabamba</item>
+        <item>Morropón</item>
+        <item>Paita</item>
+        <item>Sullana</item>
+        <item>Talara</item>
+        <item>Sechura</item>
+    </string-array>
+
+    <string-array name="provPuno">
+        <item>Puno</item>
+        <item>Azángaro</item>
+        <item>Carabaya</item>
+        <item>Chucuito</item>
+        <item>El Collao</item>
+        <item>Huancané</item>
+        <item>Lampa</item>
+        <item>Melgar</item>
+        <item>Moho</item>
+        <item>San Antonio de Putina</item>
+        <item>San Román</item>
+        <item>Sandia</item>
+        <item>Yunguyo</item>
+    </string-array>
+
+    <string-array name="provSanMartin">
+        <item>Moyobamba</item>
+        <item>Bellavista</item>
+        <item>El Dorado</item>
+        <item>Huallaga</item>
+        <item>Lamas</item>
+        <item>Mariscal Cáceres</item>
+        <item>Picota</item>
+        <item>La Rioja</item>
+        <item>San Martín</item>
+        <item>Tocache</item>
+    </string-array>
+
+    <string-array name="provTacna">
+        <item>Tacna</item>
+        <item>Candarave</item>
+        <item>Jorge Basadre</item>
+        <item>Tarata</item>
+    </string-array>
+
+    <string-array name="provTumbes">
+        <item>Tumbes</item>
+        <item>Contralmirante Villar</item>
+        <item>Zarumilla</item>
+    </string-array>
+
+    <string-array name="provUcayali">
+        <item>Coronel Portillo</item>
+        <item>Atalaya</item>
+        <item>Padre Abad</item>
+        <item>Purús</item>
+    </string-array>
+
+</resources>

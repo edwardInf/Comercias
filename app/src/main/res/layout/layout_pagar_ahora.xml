@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textSize="12sp"
+            android:textColor="@color/negro2"/>
+
+        <TextView
+            android:id="@+id/txt_totalPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/. 890.44"
+            android:textSize="18sp"
+            android:textColor="@color/negro2"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pagarAhora"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/google"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:elevation="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

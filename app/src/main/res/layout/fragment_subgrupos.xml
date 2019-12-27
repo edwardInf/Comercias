@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragmentos.SubGruposFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_subgGuposActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+             android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_subGruposActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/redondeado"
+            android:scrollbars="none"/>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

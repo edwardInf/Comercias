@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+        <EditText
+            android:id="@+id/edt_nTarjetaConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_visa"
+            android:paddingBottom="15dp"
+            android:hint="@string/n_tarjeta"
+            android:inputType="number"
+            android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_nombreTarjetaConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:hint="@string/nombres"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edt_apellidoTarjetaConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:hint="@string/apellidos"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_codigoTrajetaConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:hint="@string/codigoTarjeta"
+        android:inputType="number"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <EditText
+            android:id="@+id/edt_mesTarjetaConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:hint="@string/mm"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edt_yearTarjetaConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:hint="@string/aa"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guardarConfigTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/resaltado"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"/>
+</LinearLayout>

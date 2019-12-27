@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_gruposAcitvity"
+    android:background="@drawable/select_grupofondo">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="3dp"
+        android:id="@+id/layout_indicador"
+        android:background="@drawable/select_grupo"
+        android:layout_height="match_parent" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <pe.acex.comercias.widgets.FontAwesome
+            android:id="@+id/img_gruposActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_gruposActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:maxLines="2"/>
+    </LinearLayout>
+
+</LinearLayout>

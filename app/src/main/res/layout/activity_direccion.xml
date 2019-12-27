@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividad.DireccionActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradiente"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <pe.acex.comercias.utils.BaseStatusBar
+            android:id="@+id/base_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiente"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar_main">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <TextView
+                    android:id="@+id/txt_toolbarDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanco"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:baselineAligned="false">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_nombres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/edt_nombresAddDirecc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:hint="@string/nombApell"
+                        android:inputType="textPersonName"
+                        android:textSize="13sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/edt_apellAddDirecc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:hint="@string/apellidos"
+                        android:inputType="number"
+                        android:textSize="12sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+-->
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_celularAddDirecc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:hint="@string/celular"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:textSize="13sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.tiper.MaterialSpinner
+                android:id="@+id/spinner_tipoDirecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tipoDirecc"
+                android:layout_marginBottom="5dp"
+                android:textSize="7sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_addDirecc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/edt_direccionAddDirecc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:hint="@string/direccion"
+                        android:inputType="textPersonName"
+                        android:textSize="13sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageButton
+                    android:id="@+id/btn_getCalleAddDirecc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_map"/>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_referenciaDirecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_referenciaAddDirecc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:hint="@string/direcc2"
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.tiper.MaterialSpinner
+                android:id="@+id/spinner_departamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/departamento"
+                android:layout_marginBottom="5dp"
+                android:textSize="7sp"/>
+            <com.tiper.MaterialSpinner
+                android:id="@+id/spinner_provincia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/provincia"
+                android:layout_marginBottom="5dp"
+                android:textSize="7sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_distritoDirecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_distritoDirecc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:hint="@string/distrito"
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_codPostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_codPostal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:hint="@string/codPostal"
+                    android:inputType="number"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="25dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_guardarAddDirecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/resaltado"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

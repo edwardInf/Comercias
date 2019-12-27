@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividad.RegistroActivity"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/crear_cuenta"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt_crearNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/nombre_completo"
+        android:textColor="@color/colorGrisPrimary"
+        android:textColorHint="@color/colorGris2"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/edt_crearNumeroContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/numero_contacto"
+        android:textColor="@color/colorGrisPrimary"
+        android:textColorHint="@color/colorGris2"
+        android:maxLength="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_crearNombre"
+        android:inputType="number"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/edt_crearCorreoElectronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorGrisPrimary"
+        android:textColorHint="@color/colorGris2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_crearNumeroContacto"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/edt_crearContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/contrasena"
+        android:textColor="@color/colorGrisPrimary"
+        android:textColorHint="@color/colorGris2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edt_crearCorreoElectronico"
+        android:background="@drawable/edit_text_border"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/btn_crearUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_border"
+        android:padding="14dp"
+        android:text="@string/crear"
+        android:textColor="@color/blanco"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_acuerdo" />
+
+    <CheckBox
+        android:id="@+id/checkBox_acuerdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/estoy_deAcuerdo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_crearContrasena" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

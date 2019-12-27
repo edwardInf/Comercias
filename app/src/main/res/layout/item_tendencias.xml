@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:background="@color/blanco"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_productos"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/tendencias"/>
+    <TextView
+        android:id="@+id/txt_nombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:lines="2"
+        android:maxLines="2"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <!--<TextView
+        android:id="@+id/txt_marcaProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>-->
+
+    <TextView
+        android:id="@+id/txt_precioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <TextView
+        android:id="@+id/txt_precioOfertaProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:background="@drawable/precio_oferta"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:gravity="center_horizontal|center_vertical">
+    <ImageView
+        android:contentDescription="@string/no_conexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/error_red"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_conexion"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/btn_habilitarRed"
+        style="@style/btn_login"
+        android:background="@drawable/gradiente"
+        android:text="@string/habilitar_red"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>
