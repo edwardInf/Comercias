@@ -119,7 +119,10 @@
     <string name="disponibilidad">Disponibilidad: </string>
     <string name="soles">S/. </string>
     <string name="envio">Envio: </string>
+    <string name="enviarA">Enviar pedido a: </string>
     <string name="fecha_estimada">Fecha Estimada: </string>
+    <string name="costo">Costo: </string>
+
     <string name="empresa">Empresa: </string>
     <string name="mas"> + </string>
     <string name="menos"> - </string>
@@ -225,6 +228,35 @@
     <string name="direccAgregada">Tu dirección ha sido agregada correctamente</string>
     <string name="direccNoAgregada">Nose ha podido agregar tu dirección</string>
 
+
+    <string-array name="departamentosLista">
+        <item>Amazonas</item>
+        <item>Ancash</item>
+        <item>Apurimac</item>
+        <item>Arequipa</item>
+        <item>Ayacucho</item>
+        <item>Cajamarca</item>
+        <item>Cusco</item>
+        <item>Huancavelica</item>
+        <item>Huanuco</item>
+        <item>Ica</item>
+        <item>Junin</item>
+        <item>La Libertad</item>
+        <item>Lambayeque</item>
+        <item>Lima</item>
+        <item>Loreto</item>
+        <item>Madre De Dios</item>
+        <item>Moquegua</item>
+        <item>Pasco</item>
+        <item>Piura</item>
+        <item>Puno</item>
+        <item>San Martin</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
+        <item>Ucayali</item>
+
+
+    </string-array>
 
     <string-array name="provAmazonas">
         <item>Chachapoyas</item>

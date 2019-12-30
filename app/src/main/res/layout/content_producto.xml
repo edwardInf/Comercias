@@ -125,42 +125,93 @@
             android:background="@color/blanco"
             android:layout_marginBottom="12dp"
             android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/envio"
+                android:textColor="@color/gris3"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:textColor="@color/gris3"
-                    android:textSize="16sp"
-                    android:text="@string/envio"/>
+                    android:textSize="14sp"
+                    android:text="@string/enviarA"
+                    android:layout_weight="1"/>
+                <Spinner
+                    android:id="@+id/spinner_enviarPedidoA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/departamento"
+                    android:layout_weight="1"
+                    android:prompt="@string/departamento"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/gris3"
-                    android:textSize="16sp"
-                    android:text="@string/fecha_estimada"/>
+                    android:textSize="14sp"
+                    android:text="@string/empresa"
+                    android:layout_weight="1"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/gris3"
-                    android:textSize="16sp"
-                    android:text="@string/empresa"/>
+                    android:textSize="14sp"
+                    android:text="@string/costo"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/txt_costoEnvio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/gris3"
+                    android:textSize="14sp"
+                    android:layout_weight="1"/>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/gris3"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="@string/fecha_estimada"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/gris3"
+                    android:textSize="14sp"
+                    android:text="1 a 5 dias"
+                    android:textStyle="italic"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
         </LinearLayout>
 
 

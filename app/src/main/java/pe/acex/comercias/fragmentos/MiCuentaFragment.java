@@ -148,12 +148,14 @@ public class MiCuentaFragment extends Fragment {
 
     private void comprobarLoginEmail(){
         if (session.isLoggedIn()){
+            HashMap<String, String> user = session.getUserDetails();
 
             Launcher.logueadoEmail = true;
             iniciarSesion.setVisibility(View.GONE);
             datosMiCuenta.setVisibility(View.VISIBLE);
             if (nombres==null || email==null){
                 Toast.makeText(getActivity(), "ERROR $404", Toast.LENGTH_LONG).show();
+                cargarDatosUsuario( user.get(SessionManager.KEY_TOKEN));
             }else {
                 Toast.makeText(getActivity(), "SIN ERROR", Toast.LENGTH_LONG).show();
                 nombreUsuario.setText(getArguments().getString("nombre"));

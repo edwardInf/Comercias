@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.github.chuross.library.ExpandableLayout;
 import com.google.android.material.appbar.AppBarLayout;
 import com.smarteist.autoimageslider.SliderView;
+import com.tiper.MaterialSpinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,9 +17,11 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +50,7 @@ public class ProductoActivity extends AppCompatActivity {
     @BindView(R.id.txt_precioProductoDetalle) TextView precioProducto;
     @BindView(R.id.txt_ofertaProductoDetalle) TextView ofertaProducto;
     @BindView(R.id.txt_seleccionCantidad) TextView txtCantidad;
+    @BindView(R.id.spinner_enviarPedidoA) Spinner enviarASpinner;
 
     @BindView(R.id.rating_calificacion) RatingBar ratingBar;
     @BindView(R.id.txt_marcaProductoDetalle) TextView marcaProducto;
@@ -67,6 +71,8 @@ public class ProductoActivity extends AppCompatActivity {
     private int cantidad;
     private int mincantidad =1;
     int num_sliders;
+    private ArrayAdapter<String> enviarA;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +93,12 @@ public class ProductoActivity extends AppCompatActivity {
 
         ConexionDetalleProducto(getIntent().getExtras().getInt("id"));
         cargarDetalles();
+
+
+        enviarA = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
+                getResources().getStringArray(R.array.departamentosLista));
+        enviarA.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        enviarASpinner.setAdapter(enviarA);
     }
 
     private void cargarDetalles(){

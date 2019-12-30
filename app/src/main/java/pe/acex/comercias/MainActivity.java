@@ -287,9 +287,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }else {
             navBottom.setSelectedItemId(R.id.action_inicio);
         }
-        if (Launcher.seCreoUser){
-            showAddUsuarioEmail();
-        }
     }
 
     private void comprobarLoginFacebook(){
@@ -355,10 +352,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         request.executeAsync();
     }
 
-    private void showAddUsuarioEmail() {
-        AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-        alertDialog.setMessage("Tu usuario ha sido creado EXITOSAMENTE");
-        alertDialog.show();
-    }
+
 
 }

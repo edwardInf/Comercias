@@ -1,8 +1,11 @@
 package pe.acex.comercias.actividad;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -16,6 +19,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pe.acex.comercias.Launcher;
+import pe.acex.comercias.MainActivity;
 import pe.acex.comercias.R;
 import pe.acex.comercias.api.Conexion;
 import pe.acex.comercias.utils.Validar;
@@ -78,8 +82,9 @@ public class RegistroActivity extends AppCompatActivity {
                 nombre.getText().toString(),
                 email.getText().toString(),
                 contra.getText().toString(),
-                numero.getText().toString())){
-            finish();
+                numero.getText().toString())) {
+
+            showAddUsuarioEmail();
         }
     }
 
@@ -90,5 +95,21 @@ public class RegistroActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "TIENE QUE MARCAR 'ESTOY DE ACUERDO'" , Toast.LENGTH_LONG).show();
         }
+    }
+
+    private void showAddUsuarioEmail() {
+        AlertDialog alertDialog = new AlertDialog.Builder(RegistroActivity.this).create();
+        alertDialog.setTitle("Bienvenido a Comercias");
+        alertDialog.setMessage("Tu usuario ha sido creado EXITOSAMENTE");
+        alertDialog.setCancelable(false);
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+        alertDialog.show();
     }
 }
